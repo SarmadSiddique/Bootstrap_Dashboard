@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <!-- link css -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- bootstrap cdn link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- font awesome cdn --->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css">
+
+            <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="dash.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Testing</title>
+    <script>
+        function OpenMenu() {
+            $('#MenuItems').css('display', 'block');
+            if ($("#MenuItems").hasClass('d-none')) {
+                $("#MenuItems").removeClass('d-none');
+            } else {
+                $("#MenuItems").addClass('d-none');
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+
+        <div class="row ">
+
+            <div class="col-lg-1 ">
+                <button class="btn btn-primary btn-lg d-block d-lg-none mt-5 mx-auto" onclick="OpenMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <nav id="MenuItems" class="navbar navbar-expand-md navbar_items d-none d-lg-block">
+               
+                    <div class="navbar-collapse collapse show" id="navbarText" style="">
+                        <ul id="ul" class=" d-inline navbar-nav mr-lg-auto m-auto">
+                            <li class="nav-item active">
+
+                                <div class="text-center py-3">
+                                    <span class="fa fa-home logo_font"></span>
+                                    <p class="logo_text">MakeHome</p>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="border_link">
+                                    <span class="fa fa-home  logo_font "></span>
+                                    <br>
+                                    <a class="logo_text">Home</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="#" class="link_a ">
+                                    <div class="border_link_2">
+                                        <span class="fa fa-list  icon_link mt-2 "></span>
+                                        <p class="link_a">Listings</p>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="#" class="link_a">
+                                    <div class="border_link_2">
+                                        <span class="fa fa-file icon_link mt-2"></span>
+                                        <p class="link_a">File</p>
+                                    </div>
+                                </a>
+
+                            </li>
+                            <li class="nav-item">
+
+                                <a href="#" class="link_a">
+                                    <div class="border_link_2">
+                                        <span class="fa fa-user icon_link mt-2  "></span>
+                                        <p class="link_a">Cleints</p>
+                                    </div>
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav>
+                <!-- <div class="sidebar_items ">
+                    <div class="text-center py-3">
+                        <span class="fa fa-home logo_font"></span>
+                        <p class="logo_text">MakeHome</p>
+                    </div>
+
+                    <div class="border_link">
+                        <span class="fa fa-home  logo_font "></span>
+                        <br>
+                        <a class="logo_text">Home</a>
+                    </div>
+                    <a href="#" class="link_a ">
+                        <div class="border_link_2">
+                            <span class="fa fa-list  icon_link mt-2 "></span>
+                            <p class="link_a">Listings</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="link_a">
+                        <div class="border_link_2">
+                            <span class="fa fa-file icon_link mt-2"></span>
+                            <p class="link_a">File</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="link_a">
+                        <div class="border_link_2">
+                            <span class="fa fa-gear icon_link mt-2"></span>
+                            <p class="link_a">Setting</p>
+                        </div>
+                    </a>
+                    <a href="#" class="link_a">
+                        <div class="border_link_2">
+                            <span class="fa fa-user icon_link mt-2  "></span>
+                            <p class="link_a">Cleints</p>
+                        </div>
+                    </a>
+                </div> -->
+
+
+            </div>
+            <div class="col-lg-6 mt-5 ml-sm-5">
+                <div class="row align-item-center">
+                    <div class="col-md-6 col-sm-12 ">
+                        <span id="welcome">Welcome to the Dashboard</span>
+                    </div>
+                    <div class="col-md-6 col-sm-12 text-lg-end text-sm-center d-flex">
+                        <select class="rounded  ml-auto" name="" id="dropdown">
+                            <option value="">
+                                English
+                            </option>
+                            <option value="">
+                                saraiki
+                            </option>
+                            <option value="">
+                                punjabi
+                            </option>
+                            <option value="">
+                                urdu
+
+                            </option>
+                        </select>
+
+                        <div class="input-icon   mt-1 ">
+                            <input class="input" type="text" placeholder="search">
+                            <i id="icon2" class="fa fa-search "></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content- justify-content-between mb-2 mt-3 sales ">
+                    <p>Sales</p>
+                    <div class="w3-button">
+                        <a href="./index.html" class="w3-button ">&laquo;</a>
+                        December,2020
+                        <a href="#" class="w3-button">&raquo;</a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div class=" ">
+
+                        <p style="color: rgb(18,18, 77); font-weight: bold;" class="display-6">$21,800/= </p>
+                        <P id="leads" class="mb-md-4"> <span style="color: green; font-size: larger;">+ 10%</span> than
+                            last month</P>
+
+                        <div class="d-flex ">
+                            <div class="first mt-1"></div>
+                            <p class="mx-3">Last Month</p>
+                        </div>
+                        <div class="d-flex ">
+                            <div class="second mt-1   "></div>
+                            <p class="mx-3">Running Month</p>
+                        </div>
+
+                    </div>
+                    <!-- <div class="d-flex  justify-content-between mt-2">
+                        25k
+                        <hr class="hr1"/>
+                        
+                    </div> -->
+
+
+                </div>
+                <div class="d-flex justify-content-between images">
+                    <div class="d-block d-md-block d-sm-none d-xsm-none ">
+                        <h4>Payment <br> Method</h4>
+                        <div class="py-3">
+                            <h7>Last Modified</h7>
+                            <p class="mb-5">02-Jan-2020</p>
+                        </div>
+                    </div>
+
+
+                    <div class=" ">
+                        <img class="img-fluid width" src="./images/Paypal-icon-removebg-preview.png" alt=""
+                            width="150px " height="150px">
+                    </div>
+
+                    <div>
+                        <img class="img-fluid width2" src="./images/pink-removebg-preview.png  " alt="" width="150px "
+                            height="150px">
+                    </div>
+
+                    <div>
+                        <img class="img-fluid width" src="./images/black-removebg-preview.png" alt="" width="150px "
+                            height="150px">
+                    </div>
+                </div>
+                <div id="leads" class="foot ">
+                    <!-- <div class="block"></div> -->
+                    <div class=" d-flex justify-content-between">
+                        <h4 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Project
+                            Timeline</h4>
+                        <div class="">
+                            <button id="button" class="btn btn-primary">+ Add Project</button>
+                            <i class="fa fa- fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Monday</p>
+                        <hr class="hr1">
+
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <hr class="hr2">
+                        <hr class="hr3 ">
+                        <hr class="hr4">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Tuesday</p>
+                        <hr class="hr1">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <hr class="hr2">
+
+                        <hr class="hr4">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Wednesday</p>
+                        <hr class="hr1">
+                    </div>
+                </div>
+            </div>
+            <div id="alerts" class="col-lg-4 mt-4 ">
+                <div class="d-flex justify-content-center ">
+                    <div class="mt-3 mb-3" id="query">
+                        <div style="color: black;"> Need help?</div>
+
+                        <div> 24/7 support center</div>
+                    </div>
+                    <div class="image ">
+                        <img src="./images/stock-vector-man-greeting-and-winking-723484762-removebg-preview.png" alt=""
+                            height="100" />
+                    </div>
+                </div>
+
+                <div class="project  flex-md-row flex-sm-column justify-content-center align-item-center
+                 mt-3 ">
+                    <div class="d-flex justify-content-center align-item-center  mt-2">
+                        <div class="F mr-3 " style="height: 100px; width: 100px;">
+                            <img class="img-fluid"
+                                src="./images/speed-letter-f-red-race-monogram-logo-italic-vector-35988638-removebg-preview.png"
+                                height="100px" alt="">
+                        </div>
+
+                        <div class="  ">
+                            <h3 style="font-family: sans-serif;">
+                                Project Peace
+                            </h3>
+                            <p id="leads" style="font-size: small;"> 23 Robert st MA 302 City</p>
+                        </div>
+                    </div>
+                    <div class="d-flex icons   ">
+                        <i class="fa fa-facebook offset-5"></i>
+                        <i class="fa fa-twitter offset-1"></i>
+                        <i class="fa fa-instagram offset-1"></i>
+                    </div>
+                    <hr style="height:2px ; color:grey">
+                    <div class=" d-flex justify-content-between px-4">
+                        <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">File
+                            Manager</p>
+                        <div class="mb-2">
+                            <button id="button" class="btn btn-primary">+ Add </button>
+                            <i class="fa fa- fa-2x"></i>
+                        </div>
+                    </div>
+                   <div class="container">
+                       
+                   </div>
+                    <div class="row ml-auto mr-lg-auto ">
+                        <div id="folder" class="col-md-6 mt-md-4 mb-sm-2 ">
+                            <div class="house2 py-2 px-1 mt-2 " >
+                              <span><i class="fa fa-user fa-2x green"></i></span>
+                              <h6>My Folder</h6>
+                              <span class="date">date 21 july,1975 </span>
+                            </div>
+                        
+                        </div>
+                        <div class="col-md-6   ">
+                            <div  class="py-3 px-1 house ">
+                              <span><i id="yellow" class="fa fa-folder fa-2x"></i></span>
+                              <h6>House papers Agrement pdf </h6>
+                              <span class="date">date 23 jun,1964 </span>
+                            </div>
+                        </div>
+                        <div id="" class="col-md-6 mt-2 ">
+                            <div class="house2 py-2 px-1 " >
+                              <span><i id="red" class="fa fa-home fa-2x "></i></span>
+                              <h6>Our Houses</h6>
+                              <span class="date">date 21 july,1975 </span>
+                            </div>
+                        
+                        </div>
+                        <div class="col-md-6 mt-2  ">
+                            <div  class="py-3 px-1 house">
+                              <span ><i id="navy"  class="fa fa-group fa-2x"></i></span>
+                              <h6>Project and Review Rating </h6>
+                              <span class="date">date 23 jun,1964 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-3">
+                        <div class="d-flex justify-content-between">
+                            <h5>Media</h5>
+                            <span><i class="fa fa-bars fa-2x"></i></span>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    </div>
+    </div>
+
+
+</body>
+
+</html>
+<!-- <ul class="bar-graph">
+                        <li class="bar-graph-axis">
+                            <div class="bar-graph-label">100%</div>
+                            <div class="bar-graph-label">80%</div>
+                            <div class="bar-graph-label">60%</div>
+                            <div class="bar-graph-label">40%</div>
+                            <div class="bar-graph-label">20%</div>
+                            <div class="bar-graph-label">0%</div>
+                        </li>
+                        <li class="bar primary" style="height: 95%;" title="95">
+                            <div class="percent"></div>
+                            <div class="description"></div>
+                        </li>
+                        <li class="bar secondary" style="height: 90%;" title="90">
+                            <div class="percent"></div>
+                            <div class="description"></div>
+                        </li>
+                        <li class="bar success" style="height: 80%;" title="80">
+                            <div class="percent"></div>
+                            <div class="description"></div>
+                        </li>
+                        <li class="bar warning" style="height: 75%;" title="75">
+                            <div class="percent"></div>
+                            <div class="description"></div>
+                        </li>
+                        <li class="bar alert" style="height: 40%;" title="40">
+                            <div class="percent"></div>
+                            <div class="description"></div>
+                        </li>
+                    </ul>
+ -->
